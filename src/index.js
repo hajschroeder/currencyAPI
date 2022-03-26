@@ -15,7 +15,7 @@ function clearFields() {
 
 $(document).ready(function() {
   $('#doCalculation').click(function() {
-    let base = $('#homeBase').val();
+    let base = $('#homeBase').val().toUpperCase();
     let target = $('#awayTeam').val();
     let amount = $('#inputAmount').val();
     clearFields();
@@ -23,7 +23,7 @@ $(document).ready(function() {
     promise.then(function(response) {
       const body =JSON.parse(response);
       console.log(body);
-      $('.showConversion').text(`${amount} dollar value in ${base} dollars is equal to ${body.conversion_result} in ${target} dollars at an exhange rate of ${body.conversion_rate}.`);
+      $('.showConversion').text(`The unit value ${amount} in ${base} is equal to ${body.conversion_result} in ${target} at an exhange rate of ${body.conversion_rate}.`);
     }, function(error) {
       $('.showErrors').text(`We're sorry, there was an error with your request: ${error}`);  
     });

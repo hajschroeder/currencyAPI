@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CURRENCY</title>
+  <title>CURRENCY Exchange</title>
 </head>
 <body>
-  <h1>API project</h1>
+  <h1>Money Changer</h1>
   <div class = "container">
     <label for="homeBase">Convert From: </label>
     <input id ="homeBase" type = "text">
     <br>
   
-    <select class="form-control" id="awayTeam">
+    <p>Convert To: </p><select class="form-control" id="awayTeam">
+      <p></p>
+      <option value="">---select a country---</option>
       <option value="CAD">Canada</option>
       <option value="KRW">South Korea</option>
       <option value="UAH">Ukraine</option>
@@ -24,9 +26,10 @@
     <label for="inputAmount">Amount: </label>
     <input id="inputAmount" type="text">
     <br>
-
+    <br>
     <button class ="btn-danger" id="doCalculation">Get the exchange</button>
-    
+    <br>
+    <br>
     <div class = "showConversion"></div>
     <div class = "showErrors"></div>
   </div>

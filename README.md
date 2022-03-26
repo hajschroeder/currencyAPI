@@ -34,7 +34,8 @@ _This is an independent project for the coding bootcamp Epicodus. It's function 
 _Note, this will require your local device to have node.js installed_
 * Clone this repository to your desktop
 * Open the folder saved to your desktop with VSCode (or any other IDE capable of running npm and webpack)
-* In the terminal type _npm install_ and hit enter
+* Open a new terminal type _npm install_ and
+ hit enter
 * Wait for all packages and documents to be installed and bundled
 * While the package is installing, go to the [Exhange Rate API](https://www.exchangerate-api.com/) website. Enter your e-mail address, and click "Get Free Key". You should receive an e-mail shortly after providing a link to confirm your e-mail. Once this is confirmed, you will receive your API key. 
 * Go back to you IDE and run _npm install dotenv-webpack@2.0.0 --save-dev_ in the terminal. 
@@ -48,8 +49,7 @@ _Note, this will require your local device to have node.js installed_
 ___
 
 ## Known Bugs
-No known bugs
-
+At this moment, the API is being called successfully, and is returning the correct conversion result to the user, provided there are no errors. Error messages are being returned to the user when applicable, however the error code (401, 404, etc.) is not. 
 ---
 
 ## License 
