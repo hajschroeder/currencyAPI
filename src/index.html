@@ -12,13 +12,21 @@
     <label for="homeBase">Convert From: </label>
     <input id ="homeBase" type = "text">
     <br>
-    <label for ="awayTeam">Convert To: </label>
-    <input id="awayTeam" type = "text">
-    <br>
+  
+    <select class="form-control" id="awayTeam">
+      <option value="CAD">Canada</option>
+      <option value="KRW">South Korea</option>
+      <option value="UAH">Ukraine</option>
+      <option value="NOK">Norway</option>
+      <option value="HTG">Haiti</option>
+    </select>
+
     <label for="inputAmount">Amount: </label>
     <input id="inputAmount" type="text">
     <br>
+
     <button class ="btn-danger" id="doCalculation">Get the exchange</button>
+    
     <div class = "showConversion"></div>
     <div class = "showErrors"></div>
   </div>
